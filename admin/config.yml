@@ -3,8 +3,8 @@ backend:
   repo: juma352/Gracie-s-Collection
   branch: main
 
-site_url: /
-display_url: /
+site_url: https://juma352.github.io/Gracie-s-Collection/
+display_url: https://juma352.github.io/Gracie-s-Collection/
 
 # GitHub Pages needs an OAuth proxy for Decap CMS login.
 # base_url: https://your-oauth-proxy.example.com
