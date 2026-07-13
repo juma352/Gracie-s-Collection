@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mawingu Photography</title>
+    
+    <!-- Google Fonts for Artistic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Custom Typography Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen font-artistic-body">
+
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-xl border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="index.html" class="flex items-center group transition-all duration-300 hover:scale-105 logo-container">
+                <img src="images/clear Mawingu.png" alt="Mawingu Photography Logo" 
+                     class="h-20 w-auto logo-enhanced">
+            </a>
+            <div class="flex space-x-10">
+                <a href="gallery.html" class="relative font-artistic-sub text-gray-700 font-semibold text-lg hover:text-blue-600 transition-all duration-300 letter-spacing-wide after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-blue-600 after:to-purple-600 after:transition-all after:duration-300 hover:after:w-full after:rounded-full transform hover:-translate-y-1">Gallery</a>
+                <a href="about.html" class="relative font-artistic-sub text-blue-600 font-semibold text-lg transition-all duration-300 letter-spacing-wide after:content-[''] after:absolute after:w-full after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-blue-600 after:to-purple-600 after:rounded-full">About</a>
+                <a href="contact.html" class="relative font-artistic-sub text-gray-700 font-semibold text-lg hover:text-blue-600 transition-all duration-300 letter-spacing-wide after:content-[''] after:absolute after:w-0 after:h-1 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-blue-600 after:to-purple-600 after:transition-all after:duration-300 hover:after:w-full after:rounded-full transform hover:-translate-y-1">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- About Header -->
+        <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="font-artistic-heading text-6xl font-bold mb-6 text-gradient animate-fade-in-down">About Mawingu</h1>
+                <p class="font-artistic-body text-xl text-gray-300 max-w-2xl mx-auto animate-fade-in-up delay-300">
+                    Discovering beauty in the unexpected, creating art from authenticity
+                </p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                        <div>
+                            <h2 class="font-artistic-heading text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                            <p class="font-artistic-body text-lg text-gray-600 leading-relaxed mb-6">
+                                Mawingu Photography Studio emerged from a passion to capture the raw, unfiltered beauty of human expression and urban artistry. We believe that the most powerful photographs are born in the spaces between planned and spontaneous, between silence and rebellion.
+                            </p>
+                            <p class="font-artistic-body text-lg text-gray-600 leading-relaxed">
+                                Our lens finds beauty in the unexpected places—where street art blooms on forgotten walls, where performers transform themselves in fleeting moments, where cultures collide and create something entirely new.
+                            </p>
+                        </div>
+                        <div class="relative">
+                            <img src="images/clear Mawingu.png" alt="Mawingu Photography Studio" 
+                                 class="w-full rounded-2xl shadow-2xl">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-artistic-sub text-2xl font-semibold text-gray-900 mb-4">Our Vision</h3>
+                            <p class="font-artistic-body text-gray-600">To document the authentic voices of urban culture and human expression, creating visual narratives that honor the complexity and beauty of contemporary life.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-artistic-sub text-2xl font-semibold text-gray-900 mb-4">Our Mission</h3>
+                            <p class="font-artistic-body text-gray-600">To transform fleeting moments into timeless art, capturing the stories that emerge when creativity, culture, and human spirit intersect in unexpected ways.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center bg-gray-50 rounded-2xl p-12">
+                        <h2 class="font-artistic-heading text-4xl font-bold text-gray-900 mb-6">Let's Create Together</h2>
+                        <p class="font-artistic-body text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                            Ready to tell your story through our lens? Whether you're an artist, performer, or someone with a vision to share, we'd love to collaborate with you.
+                        </p>
+                        <a href="contact.html" class="btn-gradient text-white px-8 py-4 rounded-full font-semibold text-lg letter-spacing-wide transition-all duration-300 hover:scale-105 hover:shadow-xl inline-flex items-center justify-center group">
+                            <span>Get In Touch</span>
+                            <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2025 Grace Matu Photography — All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

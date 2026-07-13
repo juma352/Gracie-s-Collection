@@ -1,0 +1,44 @@
+{
+  "photos": [
+    {
+      "image": "images/Blooming.jpg",
+      "title": "Blooming",
+      "description": "Colors bursting through urban decay"
+    },
+    {
+      "image": "images/Becoming.jpg",
+      "title": "Becoming",
+      "description": "Transformation through street art"
+    },
+    {
+      "image": "images/Beyond the elements.jpg",
+      "title": "Beyond the Elements",
+      "description": "Art transcending nature"
+    },
+    {
+      "image": "images/City.jpg",
+      "title": "City",
+      "description": "Urban canvas of expression"
+    },
+    {
+      "image": "images/Mùthùngu in Art.jpg",
+      "title": "Mùthùngu in Art",
+      "description": "Cultural identity in color"
+    },
+    {
+      "image": "images/Resistance.jpg",
+      "title": "Resistance",
+      "description": "Defiant beauty against conformity"
+    },
+    {
+      "image": "images/Resistance 2.jpg",
+      "title": "Resistance II",
+      "description": "Continued rebellion through art"
+    },
+    {
+      "image": "images/S.H.E.jpg",
+      "title": "S.H.E.",
+      "description": "Feminine power in street expression"
+    }
+  ]
+}

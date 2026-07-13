@@ -1,0 +1,64 @@
+backend:
+  name: github
+  # Replace this with the GitHub repo that Vercel deploys from.
+  repo: YOUR_GITHUB_OWNER/YOUR_REPOSITORY
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: site_settings
+    label: Site Settings
+    files:
+      - name: homepage
+        label: Homepage Photo
+        file: content/home.json
+        format: json
+        fields:
+          - { label: Hero Image, name: heroImage, widget: image }
+          - { label: Hero Alt Text, name: heroAlt, widget: string }
+      - name: gallery
+        label: Gallery Cards
+        file: content/gallery.json
+        format: json
+        fields:
+          - label: Collections
+            name: collections
+            widget: list
+            fields:
+              - { label: Page Link, name: href, widget: string }
+              - { label: Card Title, name: title, widget: string }
+              - { label: Card Description, name: description, widget: text }
+              - { label: Card Image, name: image, widget: image }
+              - { label: Alt Text, name: alt, widget: string }
+              - label: Accent
+                name: accent
+                widget: select
+                options:
+                  - { label: Blue, value: blue }
+                  - { label: Purple, value: purple }
+      - name: chromatic
+        label: Chromatic Rebellion Photos
+        file: content/chromatic.json
+        format: json
+        fields:
+          - label: Photos
+            name: photos
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: string }
+      - name: echoes
+        label: Echoes in Motion Photos
+        file: content/echoes.json
+        format: json
+        fields:
+          - label: Photos
+            name: photos
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: string }

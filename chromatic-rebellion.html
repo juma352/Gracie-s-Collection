@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromatic Rebellion - Mawingu Photography</title>
+    
+    <!-- Google Fonts for Artistic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="js/content-loader.js" defer></script>
+    
+    <!-- Custom Typography Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen font-artistic-body">
+                <div id="chromatic-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"></div>
+                        <div class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02] h-80">
+                            <img src="images/Resistance.jpg" alt="Resistance - Defiant beauty against conformity" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="font-artistic-sub text-lg font-semibold mb-1">Resistance</h3>
+                                <p class="text-sm text-gray-200">Defiant beauty against conformity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: Resistance 2 -->
+                    <div class="group cursor-pointer" onclick="openLightbox(6)">
+                        <div class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02] h-80">
+                            <img src="images/Resistance 2.jpg" alt="Resistance II - Continued rebellion through art" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="font-artistic-sub text-lg font-semibold mb-1">Resistance II</h3>
+                                <p class="text-sm text-gray-200">Continued rebellion through art</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo: S.H.E. -->
+                    <div class="group cursor-pointer" onclick="openLightbox(7)">
+                        <div class="relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02] h-80">
+                            <img src="images/S.H.E.jpg" alt="S.H.E. - Feminine power in street expression" 
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="font-artistic-sub text-lg font-semibold mb-1">S.H.E.</h3>
+                                <p class="text-sm text-gray-200">Feminine power in street expression</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2025 Grace Matu Photography — All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-nav lightbox-prev" onclick="prevImage()">&#10094;</span>
+        <span class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        let images = [];
+
+        let currentImageIndex = 0;
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            
+            img.src = images[index].src;
+            img.alt = images[index].title + ' - ' + images[index].description;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            openLightbox(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            openLightbox(currentImageIndex);
+        }
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                prevImage();
+            } else if (e.key === 'ArrowRight') {
+                nextImage();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const data = await SiteContent.loadJSON('content/chromatic.json');
+                images = data.photos;
+                document.getElementById('chromatic-grid').innerHTML = SiteContent.renderPhotoGrid(images);
+            } catch (error) {
+                console.warn('Chromatic content could not be loaded.', error);
+            }
+        });
+    </script>
+
+</body>
+</html>

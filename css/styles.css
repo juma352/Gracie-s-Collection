@@ -1,0 +1,254 @@
+/* Primary Heading Font - Elegant and Artistic */
+.font-artistic-heading {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Secondary Heading Font - Modern and Clean */
+.font-artistic-sub {
+    font-family: 'Crimson Text', serif;
+}
+
+/* Script Font for Signatures and Special Text */
+.font-artistic-script {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Body Text - Modern and Readable */
+.font-artistic-body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Text Effects */
+.text-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-shadow-elegant {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.letter-spacing-wide {
+    letter-spacing: 0.1em;
+}
+
+.letter-spacing-wider {
+    letter-spacing: 0.2em;
+}
+
+/* Artistic underline effect */
+.underline-artistic {
+    position: relative;
+}
+
+.underline-artistic::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
+    opacity: 0.7;
+}
+
+/* Logo styling for enhanced visibility */
+.logo-enhanced {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3)) contrast(1.3) brightness(0.8) saturate(1.4);
+    transition: all 0.3s ease;
+}
+
+.logo-enhanced:hover {
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4)) contrast(1.4) brightness(0.7) saturate(1.6);
+    transform: scale(1.05);
+}
+
+/* Dark backdrop for logo */
+.logo-container {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 8px;
+    padding: 4px 8px;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo-container:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.15) 100%);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Animations for Engagement */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pulseSlow {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes bounceSlow {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 3s infinite;
+}
+
+/* Delay Classes */
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-1000 {
+    animation-delay: 1s;
+}
+
+/* Enhanced Button Styles */
+.btn-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.lightbox-prev {
+    left: 30px;
+}
+
+.lightbox-next {
+    right: 30px;
+}

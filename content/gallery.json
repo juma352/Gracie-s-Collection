@@ -1,0 +1,20 @@
+{
+  "collections": [
+    {
+      "href": "chromatic-rebellion.html",
+      "title": "Chromatic Rebellion",
+      "description": "A visual manifesto of color erupting where it \"shouldn't.\" In alleyways, on crumbling walls, beneath overpasses and behind forgotten corners, graffiti and street art bloom like wildflowers through concrete.",
+      "image": "images/Blooming.jpg",
+      "alt": "Chromatic Rebellion Collection",
+      "accent": "blue"
+    },
+    {
+      "href": "echoes-in-motion.html",
+      "title": "Echoes in Motion",
+      "description": "A celebration of the human spirit in performance captured mid-song, mid-dance, mid-roar. These photographs document the fleeting moments when people become more than themselves.",
+      "image": "images/Enjoyment.jpeg",
+      "alt": "Echoes in Motion Collection",
+      "accent": "purple"
+    }
+  ]
+}
