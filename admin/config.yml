@@ -1,8 +1,14 @@
 backend:
   name: github
-  # Replace this with the GitHub repo that Vercel deploys from.
-  repo: YOUR_GITHUB_OWNER/YOUR_REPOSITORY
+  repo: juma352/Gracie-s-Collection
   branch: main
+
+site_url: /
+display_url: /
+
+# GitHub Pages needs an OAuth proxy for Decap CMS login.
+# base_url: https://your-oauth-proxy.example.com
+# auth_endpoint: auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
