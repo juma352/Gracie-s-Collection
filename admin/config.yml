@@ -1,14 +1,12 @@
 backend:
-  name: github
-  repo: juma352/Gracie-s-Collection
+  name: git-gateway
   branch: main
 
-site_url: https://juma352.github.io/Gracie-s-Collection/
-display_url: https://juma352.github.io/Gracie-s-Collection/
+publish_mode: editorial_workflow
 
-# GitHub Pages needs an OAuth proxy for Decap CMS login.
-# base_url: https://your-oauth-proxy.example.com
-# auth_endpoint: auth
+# Update these after the site is deployed on Netlify.
+# site_url: https://your-site-name.netlify.app
+# display_url: https://your-site-name.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
