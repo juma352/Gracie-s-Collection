@@ -1,22 +1,22 @@
 {
   "photos": [
     {
-      "image": "images/Enjoyment.jpeg",
+      "image": "/images/Enjoyment.jpeg",
       "title": "Enjoyment",
       "description": "Pure joy captured in motion"
     },
     {
-      "image": "images/Bugman.jpg",
+      "image": "/images/Bugman.jpg",
       "title": "Bugman",
       "description": "Performance as transformation"
     },
     {
-      "image": "images/Bugman 2.jpg",
+      "image": "/images/Bugman 2.jpg",
       "title": "Bugman II",
       "description": "The continued metamorphosis"
     },
     {
-      "image": "images/Powerjoyment.jpg",
+      "image": "/images/Powerjoyment.jpg",
       "title": "Powerjoyment",
       "description": "Explosive energy and celebration"
     }
