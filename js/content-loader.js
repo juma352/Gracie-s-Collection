@@ -33,10 +33,10 @@
     }
 
     function accentClasses(accent) {
-        if (accent === 'purple') {
+        if (accent === 'coral') {
             return {
-                hoverText: 'group-hover:text-purple-300',
-                arrow: 'text-purple-300'
+                hoverText: 'group-hover:text-orange-300',
+                arrow: 'text-orange-300'
             };
         }
 
